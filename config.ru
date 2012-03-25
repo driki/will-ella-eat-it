@@ -1,2 +1,2 @@
-require "willmykid"
+require './willmykid'
 run Sinatra::Application
