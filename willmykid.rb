@@ -13,7 +13,7 @@ menu = {
 Sal's Pizza
 Vegetable
 Chilled or Fresh 
-Frui",
+Fruit",
             :eatit => "No"
           },
           3 => 
@@ -128,7 +128,7 @@ Frui",
           },
           25 => 
           {
-            :menu => "No school lunch today",
+            :menu => "No school lunch",
             :eatit => "No"
           },
           26 => 
@@ -185,8 +185,9 @@ get '/voice-menu' do
   builder do |xml|
     xml.instruct!
     xml.Response do 
-      xml.Say(menu[(Time.now+0*24*60*60).day][:menu])
+      xml.Say("Today: "+menu[(Time.now+0*24*60*60).day][:menu])
       xml.Say("Tomorrow's lunch is "+menu[(Time.now+1*24*60*60).day][:menu])
+      xml.Say("Thanks for using What's for lunch")
     end
   end
 end
