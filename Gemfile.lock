@@ -1,9 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    active_support (3.0.0)
-      activesupport (= 3.0.0)
-    activesupport (3.0.0)
     daemons (1.1.8)
     eventmachine (0.12.10)
     rack (1.4.1)
@@ -23,6 +20,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_support
   sinatra
   thin
