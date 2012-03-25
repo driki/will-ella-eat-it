@@ -37,6 +37,7 @@
   <body>
 
     <div class="container">
+      <span style="float: right;"><a class="btn btn-info btn-large">Call for the menu at: 617-830-4577</a></span>
       <div class="hero-unit">
         <p><%= (Time.now+0*60*60).strftime("%A") %>'s Watertown, MA all schools lunch</p>
         <h1 id="menu" style="font-size: 5em; line-height: 1em;"><%= @menu[(Time.now+0*60*60).day][:menu] %></h1>
@@ -141,7 +142,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         </table>
       </div>
       <div>
-        <a class="btn btn-info btn-large">Call for the menu at: 617-830-4577</a>
         <h3>Service provided by <a href="http://www.mattmacdonald.com">Matt MacDonald</a></h3>
         <p>Menu information is from the Watertown, MA <a href="http://www.watertown.k12.ma.us/dept/food/index.html">public schools all lunch menu</a>.</p>
       </div>
