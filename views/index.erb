@@ -90,11 +90,11 @@
         </div>
         <div class="span6" style="text-align: center;">
           <% if @menu[Time.now.day+day_offset][:eatit] == "Yes" %>
-            <h1 class="btn btn-success" style="font-size: 13em; line-height: 1em; text-align: center;">Yes</h1>
+            <h1 class="btn btn-success" style="font-size: 10em; line-height: 1em; text-align: center;">Yes</h1>
           <% elsif @menu[Time.now.day+day_offset][:eatit] == "No" %>
-            <h1 class="btn btn-danger" style="font-size: 13em; line-height: 1em; text-align: center;">No</h1>
+            <h1 class="btn btn-danger" style="font-size: 10em; line-height: 1em; text-align: center;">No</h1>
           <% elsif @menu[Time.now.day+day_offset][:eatit] == "Maybe" %>
-            <h1 class="btn btn-warning" style="font-size: 13em; line-height: 1em; text-align: center;">Maybe</h1>
+            <h1 class="btn btn-warning" style="font-size: 10em; line-height: 1em; text-align: center;">Maybe</h1>
           <% end %>
         </div>
       </div>
