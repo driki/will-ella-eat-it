@@ -187,7 +187,7 @@ get '/voice-menu' do
     xml.Response do 
       xml.Say("Today: "+menu[(Time.now+0*24*60*60).day][:menu])
       xml.Say("Tomorrow's lunch is "+menu[(Time.now+1*24*60*60).day][:menu])
-      xml.Say("Thanks for using What's for lunch")
+      xml.Say("Thanks for using Watertown what's for lunch")
     end
   end
 end
