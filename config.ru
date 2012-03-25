@@ -1,3 +1,2 @@
-require 'rubygems'
-require 'sinatra'
-require 'thin'
+require "willmykid"
+run Sinatra::Application
