@@ -1,3 +1,3 @@
-source :rubygems
-gem 'sinatra'
-gem 'thin'
+require 'rubygems'
+require 'sinatra'
+require 'thin'
