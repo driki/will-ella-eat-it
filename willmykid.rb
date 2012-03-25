@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'builder'
 
-march = { 
+menu = { 
           1 => 
           {
             :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
@@ -177,7 +177,7 @@ Fruit",
       }
 
 get '/' do
-  @menu = march
+  @menu = menu
   erb :index
 end
 
@@ -185,7 +185,8 @@ get '/voice-menu' do
   builder do |xml|
     xml.instruct!
     xml.Response do 
-      xml.Say("Hello from my Heroku app")
+      xml.Say(menu[(Time.now+0*24*60*60).day][:menu])
+      xml.Say("Tomorrow's lunch is "+menu[(Time.now+1*24*60*60).day][:menu])
     end
   end
 end
