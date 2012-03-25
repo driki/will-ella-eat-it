@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <% day_offset = 0 %>
+  <% if Time.now.saturday? %>
+    <% day_offset = 2 %>
+  <% elsif Time.now.sunday? %>
+    <% day_offset = 1 %>
+  <% end %>
   <head>
     <meta charset="utf-8">
     <title>Will Ella eat it?</title>
@@ -32,16 +38,16 @@
 
 
     <div class="container">
-      <div class="hero-unit" style="text-align: center;">
-        <p>Today's Watertown, MA all schools lunch</p>
-        <h1 id="menu" style="font-size: 6em; line-height: 1em; text-align: center;"><%= @menu[Time.now.day][:menu] %></h1>
+      <div class="hero-unit">
+        <p><%= (Time.now+0*60*60).strftime("%A") %>'s Watertown, MA all schools lunch</p>
+        <h1 id="menu" style="font-size: 5em; line-height: 1em;"><%= @menu[(Time.now+0*60*60).day][:menu] %></h1>
       </div>
       <div class="row">
         <div class="span6">
           <table class="table table-striped table-bordered table-condensed">
             <thead>
               <tr>
-                <th colspan="2" style="font-size: 2em; line-height: 1em;">Example Nutrional Information</th>
+                <th colspan="2" style="font-size: 2em; line-height: 1em;">Not-real Nutritional Information *</th>
               </tr>
             </thead>
             <tbody>
@@ -73,6 +79,9 @@
                 <td>Cholesterol</td>
                 <td>0</td>
               </tr>
+              <tr>
+                <td colspan="2"><strong>* I'm looking for real nutrition data</strong></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -80,24 +89,41 @@
           <h1 style="font-size: 4em; line-height: 1em; text-align: center;">Will Ella eat it?</h1>
         </div>
         <div class="span6" style="text-align: center;">
-          <% if @menu[Time.now.day][:eatit] == "No" %>
+          <% if @menu[Time.now.day+day_offset][:eatit] == "Yes" %>
             <h1 class="btn btn-success" style="font-size: 13em; line-height: 1em; text-align: center;">Yes</h1>
-          <% else %>
+          <% elsif @menu[Time.now.day+day_offset][:eatit] == "No" %>
             <h1 class="btn btn-danger" style="font-size: 13em; line-height: 1em; text-align: center;">No</h1>
+          <% elsif @menu[Time.now.day+day_offset][:eatit] == "Maybe" %>
+            <h1 class="btn btn-warning" style="font-size: 13em; line-height: 1em; text-align: center;">Maybe</h1>
           <% end %>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="span3">
-          <p>Service provided by <a href="http://www.mattmacdonald.com">Matt MacDonald</a></p>
-        </div>
-        <div class="span3">
-          <p>Menu information is from the Watertown, MA <a href="http://www.watertown.k12.ma.us/dept/food/index.html">public schools all lunch menu</a>.</p>
-        </div>
-        <div class="span6">
-          <p>Nutrition data provided by <a href="http://www.esha.com/">ESHA</a> (Elizabeth Stewart Hands and Associates) Research started in 1981 and released its first program, The Food Processor nutrition analysis system, in 1984. Three years of detailed nutrition research were needed to build a comprehensive database with few missing values. The ESHA Nutrient Database follows stringent protocols for nutrient information, and is now the industry hallmark for completeness and accuracy.</p>
-        </div>
+      <h1>Coming up...</h1>
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th width="20%"><%= (Time.now+0*24*60*60).strftime("%A") %></th>
+              <th width="20%"><%= (Time.now+1*24*60*60).strftime("%A") %></th>
+              <th width="20%"><%= (Time.now+2*24*60*60).strftime("%A") %></th>
+              <th width="20%"><%= (Time.now+3*24*60*60).strftime("%A") %></th>
+              <th width="20%"><%= (Time.now+4*24*60*60).strftime("%A") %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><%= @menu[(Time.now+0*24*60*60).day][:menu] %></td>
+              <td><%= @menu[(Time.now+1*24*60*60).day][:menu] %></td>
+              <td><%= @menu[(Time.now+3*24*60*60).day][:menu] %></td>
+              <td><%= @menu[(Time.now+4*24*60*60).day][:menu] %></td>
+              <td><%= @menu[(Time.now+5*24*60*60).day][:menu] %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Service provided by <a href="http://www.mattmacdonald.com">Matt MacDonald</a></p>
+        <p>Menu information is from the Watertown, MA <a href="http://www.watertown.k12.ma.us/dept/food/index.html">public schools all lunch menu</a>.</p>
       </div>
     </div> <!-- /container -->
 
