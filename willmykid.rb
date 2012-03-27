@@ -147,7 +147,7 @@ Your Choice Sandwich
 Turkey, Ham, Tuna 
 w/wo Cheese
  Vegetable Sticks w/dip
-Fresh Frui",
+Fresh Fruit",
             :eatit => "No"
           },
           28 => 
