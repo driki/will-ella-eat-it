@@ -155,7 +155,7 @@ Fresh Frui",
             :menu => "
 Chicken Caesar Wrap
 Vegetable
-Chilled or Fresh Frui",
+Chilled or Fresh Fruit",
             :eatit => "No"
           },
           29 => 
