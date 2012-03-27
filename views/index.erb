@@ -145,10 +145,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
               <td><%= !@menu[(Time.now+4*24*60*60).day].nil? ? @menu[(Time.now+4*24*60*60).day][:menu] : "No menu today" %></td>
             </tr>
             <tr>
-              <td><span class="badge"><%= @menu[(Time.now+0*24*60*60).day][:eatit] %></span></td>
-              <td><span class="badge"><%= @menu[(Time.now+1*24*60*60).day][:eatit] %></span></td>
-              <td><span class="badge"><%= @menu[(Time.now+2*24*60*60).day][:eatit] %></span></td>
-              <td><span class="badge"><%= @menu[(Time.now+3*24*60*60).day][:eatit] %></span></td>
+              <td><span class="badge"><%= !@menu[(Time.now+0*24*60*60).day].nil? ? @menu[(Time.now+0*24*60*60).day][:eatit] : "No menu today"%></span></td>
+              <td><span class="badge"><%= !@menu[(Time.now+1*24*60*60).day].nil? ? @menu[(Time.now+1*24*60*60).day][:eatit] : "No menu today"%></span></td>
+              <td><span class="badge"><%= !@menu[(Time.now+2*24*60*60).day].nil? ? @menu[(Time.now+2*24*60*60).day][:eatit] : "No menu today"%></span></td>
+              <td><span class="badge"><%= !@menu[(Time.now+3*24*60*60).day].nil? ? @menu[(Time.now+3*24*60*60).day][:eatit] : "No menu today"%></span></td>
               <td><span class="badge"><%= !@menu[(Time.now+4*24*60*60).day].nil? ? @menu[(Time.now+4*24*60*60).day][:eatit] : "No menu today" %></span></td>
             </tr>
           </tbody>
