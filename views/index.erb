@@ -138,10 +138,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
           </thead>
           <tbody>
             <tr>
-              <td><%= @menu[(Time.now+0*24*60*60).day][:menu] %></td>
-              <td><%= @menu[(Time.now+1*24*60*60).day][:menu] %></td>
-              <td><%= @menu[(Time.now+2*24*60*60).day][:menu] %></td>
-              <td><%= @menu[(Time.now+3*24*60*60).day][:menu] %></td>
+              <td><%= !@menu[(Time.now+0*24*60*60).day].nil? ? @menu[(Time.now+0*24*60*60).day][:menu] : "No menu today" %></td>
+              <td><%= !@menu[(Time.now+1*24*60*60).day].nil? ? @menu[(Time.now+1*24*60*60).day][:menu] : "No menu today" %></td>
+              <td><%= !@menu[(Time.now+2*24*60*60).day].nil? ? @menu[(Time.now+2*24*60*60).day][:menu] : "No menu today" %></td>
+              <td><%= !@menu[(Time.now+3*24*60*60).day].nil? ? @menu[(Time.now+3*24*60*60).day][:menu] : "No menu today" %></td>
               <td><%= !@menu[(Time.now+4*24*60*60).day].nil? ? @menu[(Time.now+4*24*60*60).day][:menu] : "No menu today" %></td>
             </tr>
             <tr>
