@@ -153,8 +153,8 @@ Fresh Fruit",
           28 => 
           {
             :menu => "
-Chicken Caesar Wrap
-Vegetable
+Chicken Caesar Wrap,
+Vegetable,
 Chilled or Fresh Fruit",
             :eatit => "No"
           },
