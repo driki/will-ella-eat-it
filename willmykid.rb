@@ -4,7 +4,7 @@ require 'builder'
 menu = { 
           1 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "No school lunch today",
             :eatit => "No"
           },
           2 => 
