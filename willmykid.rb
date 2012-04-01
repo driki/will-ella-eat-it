@@ -10,30 +10,39 @@ menu = {
           2 => 
           {
             :menu => "
-Sal's Pizza
-Vegetable
-Chilled or Fresh 
-Fruit",
+Mandarin Orange
+Chicken served over
+Brown Rice,
+Mixed Vegetable,
+Chilled Pear",
             :eatit => "No"
           },
           3 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "
+Ham & Cheese
+Croissant,
+Fresh cut veggies with dip,
+Fresh Fruit",
             :eatit => "No"
           },
           4 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "Tuna Sub,
+            Fresh cut-up veggies with dip,
+            Chilled Fruit",
             :eatit => "No"
           },
           5 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
-            :eatit => "No"
+            :menu => "4x6 Pizza,
+            Garden Salad,
+            Fruit",
+            :eatit => "Yes"
           },
           6 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "No school",
             :eatit => "No"
           },
           7 => 
