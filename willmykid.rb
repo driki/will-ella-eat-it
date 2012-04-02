@@ -42,42 +42,47 @@ Fresh Fruit",
           },
           6 => 
           {
-            :menu => "No school",
+            :menu => "No school today",
             :eatit => "No"
           },
           7 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "No school today",
             :eatit => "No"
           },
           8 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "No school today",
             :eatit => "No"
           },
           9 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "Baked Chicken Nuggets,
+            Mashed Potatoes,
+            Season Peas,
+            Chilled Peaches",
             :eatit => "No"
           },
           10 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "Grilled Cheese,
+            Cup up veggies with dip,
+            Fresh Fruit",
             :eatit => "No"
           },
           11 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "Taco's, Lettuce, Tomato, Shredded Cheese, Salsa, Corn Applesauce",
             :eatit => "No"
           },
           12 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "Turkey Sandwich without cheese, Bag-O-Carrots, Fresh Fruit",
             :eatit => "No"
           },
           13 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "Hot Dog on a bun, Corn, Pretzels, Fresh Fruit",
             :eatit => "No"
           },
           14 => 
