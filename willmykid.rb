@@ -87,12 +87,12 @@ Fresh Fruit",
           },
           14 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "No school today",
             :eatit => "No"
           },
           15 => 
           {
-            :menu => "Chicken Fajita, Lettuce, Tomato, Shredded Cheese Chilled Fruit",
+            :menu => "No school today",
             :eatit => "No"
           },
           16 => 
